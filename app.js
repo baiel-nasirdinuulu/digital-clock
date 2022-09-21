@@ -14,6 +14,7 @@ window.onload = function () {
       hourTime -= 12;
       ampm = "Pm";
     }
+    hourTime = hourTime < 10 ? "0" + hourTime : hourTime;
     hourElement.innerText = hourTime;
     minutesElement.innerText = minutesDate;
     secondsElement.innerText = secndsDate;
